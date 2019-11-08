@@ -1,4 +1,3 @@
-//Credits to p0wc0w.
 #include "DigiKeyboard.h"
 void setup() {
 }
