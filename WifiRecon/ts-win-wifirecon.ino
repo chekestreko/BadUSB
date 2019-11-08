@@ -1,5 +1,7 @@
 /*
  * Teensy-WifiRecon
+ * Waits 2 seconds upon plugging teensy device in, then loads powershell script into memory to dump wifi passwords. Inspired by Hak5's 3 second shell concept.
+ * powershell script loaded: https://github.com/timebotdon/offensive-scripts/Windows/wifirecon.ps1
 */
 
 int ds = 500;
@@ -28,7 +30,7 @@ void setup()
 
 void loop()
 {
-  // blink when complete
+  // Blink when payload runtime is complete
   digitalWrite(LED_PIN, HIGH);
   delay(ds/2);
   digitalWrite(LED_PIN, LOW);
